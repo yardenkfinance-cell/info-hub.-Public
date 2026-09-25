@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מרכז הידע למשכנתאות ונדל"ן | ירדן קובי - יועץ משכנתאות</title>
+    <meta name="description" content="מרכז הידע של ירדן קובי - מדריכים, מאמרים ומקורות מידע במשכנתאות ונדל&quot;ן. הכל במקום אחד, מוסבר בפשטות ובמקצועיות.">
+    <link rel="canonical" href="https://info.yardenkoubi.com/">
+    <meta property="og:title" content="מרכז הידע למשכנתאות ונדל&quot;ן | ירדן קובי">
+    <meta property="og:description" content="מדריכים ומאמרים במשכנתאות ונדל&quot;ן - הכל במקום אחד.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://info.yardenkoubi.com/">
+    <meta property="og:locale" content="he_IL">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+    *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0
+    }
+
+    :root {
+        --bd: #1e3a8a;
+        --b: #2563eb;
+        --bl: #60a5fa;
+        --am: #f59e0b;
+        --g50: #f8fafc;
+        --g200: #e2e8f0;
+        --g400: #94a3b8;
+        --g600: #475569;
+        --g800: #1e293b;
+        --sh: 0 8px 32px rgba(0, 0, 0, .10);
+        --r: 14px;
+        --rs: 9px
+    }
+
+    body {
+        font-family: 'Assistant', 'Heebo', sans-serif;
+        background: linear-gradient(135deg, #e8f0fe, #f0f9ff, #fefce8);
+        min-height: 100vh;
+        padding: 24px 14px 48px;
+        color: var(--g800)
+    }
+
+    .w {
+        max-width: 1000px;
+        margin: 0 auto
+    }
+
+    .hd {
+        text-align: center;
+        margin-bottom: 30px
+    }
+
+    .hd-bg {
+        position: relative;
+        border-radius: var(--r);
+        overflow: hidden;
+        height: 150px;
+        margin-bottom: 20px
+    }
+
+    .hd-bg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block
+    }
+
+    .hd-bg::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(30,58,138,.22), rgba(37,99,235,.15))
+    }
+
+    .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: var(--bd);
+        color: #fff;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 4px 13px;
+        border-radius: 20px;
+        margin-bottom: 10px
+    }
+
+    .hd h1 {
+        font-family: 'Heebo', sans-serif;
+        font-weight: 900;
+        font-size: clamp(26px, 6vw, 40px);
+        background: linear-gradient(135deg, var(--bd), var(--b), var(--bl));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        line-height: 1.2;
+        margin-bottom: 10px
+    }
+
+    .hd p {
+        color: var(--g600);
+        font-size: 15px;
+        max-width: 560px;
+        margin: 0 auto;
+        line-height: 1.55
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-bottom: 36px
+    }
+
+    @media (min-width: 700px) {
+        .grid {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px
+        }
+    }
+
+    .card {
+        background: #fff;
+        border-radius: var(--r);
+        box-shadow: var(--sh);
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+        transition: transform .25s ease, box-shadow .25s ease;
+        border: 2px solid transparent
+    }
+
+    .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 16px 40px rgba(37, 99, 235, .18);
+        border-color: #bfdbfe
+    }
+
+    .card-img {
+        width: 100%;
+        aspect-ratio: 16/10;
+        overflow: hidden;
+        background: var(--g50)
+    }
+
+    .card-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block
+    }
+
+    .card-body {
+        padding: 18px 18px 20px;
+        flex: 1;
+        display: flex;
+        flex-direction: column
+    }
+
+    .card-tag {
+        display: inline-block;
+        background: #eff6ff;
+        color: var(--b);
+        font-size: 11px;
+        font-weight: 800;
+        padding: 3px 10px;
+        border-radius: 20px;
+        margin-bottom: 9px;
+        align-self: flex-start
+    }
+
+    .card h2 {
+        font-family: 'Heebo', sans-serif;
+        font-weight: 900;
+        font-size: 18px;
+        color: var(--g800);
+        line-height: 1.35;
+        margin-bottom: 8px
+    }
+
+    .card p {
+        font-size: 13.5px;
+        color: var(--g600);
+        line-height: 1.55;
+        margin-bottom: 14px;
+        flex: 1
+    }
+
+    .card-cta {
+        font-size: 13px;
+        font-weight: 800;
+        color: var(--b);
+        display: flex;
+        align-items: center;
+        gap: 4px
+    }
+
+    .coming-soon {
+        background: #fff;
+        border: 2.5px dashed var(--g200);
+        border-radius: var(--r);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 30px 18px;
+        color: var(--g400);
+        font-size: 14px;
+        font-weight: 700
+    }
+
+    .coming-soon .ic {
+        font-size: 30px;
+        margin-bottom: 8px
+    }
+
+    .cta {
+        background: linear-gradient(135deg, var(--bd), var(--b));
+        color: #fff;
+        border-radius: var(--r);
+        padding: 22px;
+        text-align: center
+    }
+
+    .cta h3 {
+        font-family: 'Heebo', sans-serif;
+        font-weight: 900;
+        font-size: 18px;
+        margin-bottom: 6px
+    }
+
+    .cta p {
+        font-size: 13.5px;
+        opacity: .9;
+        margin-bottom: 14px
+    }
+
+    .ctab {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        flex-wrap: wrap
+    }
+
+    .bph {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        background: var(--am);
+        color: #1a1200;
+        padding: 9px 18px;
+        border-radius: 30px;
+        font-weight: 900;
+        font-size: 13.5px;
+        text-decoration: none;
+        transition: transform .2s
+    }
+
+    .bwa {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        background: #25d366;
+        color: #fff;
+        padding: 9px 18px;
+        border-radius: 30px;
+        font-weight: 900;
+        font-size: 13.5px;
+        text-decoration: none;
+        transition: transform .2s
+    }
+
+    .bph:hover, .bwa:hover {
+        transform: scale(1.04)
+    }
+
+    .back-home {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 9999;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: linear-gradient(135deg, var(--bd), var(--b));
+        color: #fff;
+        padding: 10px 18px;
+        border-radius: 30px;
+        font-family: 'Heebo', sans-serif;
+        font-weight: 800;
+        font-size: 13px;
+        text-decoration: none;
+        box-shadow: 0 4px 16px rgba(30, 58, 138, .35);
+        transition: transform .2s, box-shadow .2s;
+    }
+
+    .back-home:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(30, 58, 138, .45);
+    }
+    </style>
+</head>
+<body>
+    <div class="w">
+        <div class="hd">
+            <div class="hd-bg"><img src="https://i.imgur.com/Dv9BOnG.jpeg" alt="מרכז הידע למשכנתאות ונדל״ן" loading="lazy"></div>
+            <div class="badge">📚 ירדן קובי — יועץ משכנתאות</div>
+            <h1>מרכז הידע למשכנתאות ונדל"ן</h1>
+            <p>מדריכים ומאמרים מקצועיים, מוסברים בפשטות - כדי שתגיעו לכל החלטה פיננסית עם הידע הנכון</p>
+        </div>
+
+        <div class="grid">
+            <a href="https://dira-rishona.yardenkoubi.com" target="_blank" rel="noopener noreferrer" class="card">
+                <div class="card-img">
+                    <img src="https://i.imgur.com/W57y7Z0.png" alt="המדריך לדירה הראשונה שלכם" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">רכישת דירה</span>
+                    <h2>המדריך לדירה הראשונה שלכם</h2>
+                    <p>מי זכאי, מס רכישה מופחת, כמה משכנתא אפשר לקבל, מסלולי המשכנתא העיקריים ושלבי התהליך המלא.</p>
+                    <span class="card-cta">לקריאת המדריך ←</span>
+                </div>
+            </a>
+
+            <a href="https://payoff.yardenkoubi.com" target="_blank" rel="noopener noreferrer" class="card">
+                <div class="card-img">
+                    <img src="https://i.imgur.com/pYUPrtV.jpeg" alt="דוח יתרה לסילוק" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">כלי שימושי</span>
+                    <h2>הוצאת דוח יתרה לסילוק - לפי בנק</h2>
+                    <p>הוראות מדויקות שלב-אחר-שלב להוצאת דוח יתרה לסילוק מכל בנקי ישראל.</p>
+                    <span class="card-cta">לכלי ←</span>
+                </div>
+            </a>
+
+            <a href="https://calc.yardenkoubi.com" target="_blank" rel="noopener noreferrer" class="card">
+                <div class="card-img">
+                    <img src="https://i.imgur.com/qOciRrk.jpeg" alt="מחשבון שווי נכס" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">כלי שימושי</span>
+                    <h2>מחשבון שווי נכס</h2>
+                    <p>הערכת שווי חכמה לנכס שלך - שכונה, מצב, גיל בניין, קומה וקרבה למוקדים.</p>
+                    <span class="card-cta">לכלי ←</span>
+                </div>
+            </a>
+
+            <div class="card" style="cursor:default">
+                <div class="card-img" style="position:relative">
+                    <img src="https://i.imgur.com/HvigVnH.jpeg" alt="מדריך דירה בהנחה" loading="lazy" style="filter:grayscale(40%) brightness(.85)">
+                    <span style="position:absolute;top:10px;left:10px;background:var(--am);color:#1a1200;font-size:11px;font-weight:900;padding:4px 11px;border-radius:20px">בקרוב</span>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">בהכנה</span>
+                    <h2>מדריך דירה בהנחה</h2>
+                    <p>המדריך הבא בדרך - כל מה שצריך לדעת על תוכנית דירה בהנחה. יעלה בקרוב.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta">
+            <h3>💡 יש לך שאלה שלא מוצאים עליה תשובה כאן?</h3>
+            <p>ירדן קובי — יועץ משכנתאות מוסמך | ייעוץ ראשוני ללא עלות</p>
+            <div class="ctab">
+                <a href="tel:0533030629" class="bph">📞 053-303-0629</a>
+                <a href="https://wa.me/972533030629" target="_blank" class="bwa">💬 וואטסאפ</a>
+            </div>
+        </div>
+    </div>
+    <a href="https://yardenkoubi.com" class="back-home">🏠 חזרה לאתר הראשי</a>
+</body>
+</html>
